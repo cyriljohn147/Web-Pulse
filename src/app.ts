@@ -108,7 +108,7 @@ export const buildApp = () => {
         <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
           <code>/v1/audits</code> requires a POST request with a JSON body (<code>{ "url": "..." }</code>) and an
           <code>x-client-id</code> header — not clickable from a browser, but works with curl, Postman, or the client of your choice. See the
-          <a href="https://github.com/YOUR-USERNAME/YOUR-REPO">README</a> for the full API contract.
+          <a href="https://github.com/cyriljohn147/Web-Pulse">README</a> for the full API contract.
         </p>
 
         <footer>
