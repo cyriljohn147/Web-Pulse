@@ -36,6 +36,23 @@ export const buildApp = () => {
     };
   });
 
+  app.get('/', async (_req, reply) => {
+  reply.type('text/html').send(`
+    <html>
+      <body style="font-family: sans-serif; padding: 2rem;">
+        <h1>Page Pulse</h1>
+        <p>URL-audit API. See <a href="/health">/health</a> or POST to <code>/v1/audits</code>.</p>
+        <footer style="margin-top: 3rem; font-size: 0.9rem;">
+          Built for
+          <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer">
+            Digital Heroes Training Task
+          </a>
+        </footer>
+      </body>
+    </html>
+  `);
+});
+
   app.register(auditsRoute);
 
   return app;
